@@ -1,0 +1,91 @@
+/* A little color, without changing the portfolio's layout. */
+:root {
+  --teal: #2d777c;
+  --violet: #7663a5;
+  --accent: #b04c36;
+}
+html[data-theme=dark] {
+  --teal: #79c6c1;
+  --violet: #b4a0e0;
+  --accent: #eea18a;
+}
+body {
+  min-height: 100vh;
+  background-image:
+    radial-gradient(ellipse at 100% 0, color-mix(in srgb, var(--violet) 8%, transparent), transparent 48%),
+    radial-gradient(ellipse at 0 100%, color-mix(in srgb, var(--teal) 5%, transparent), transparent 50%);
+}
+.logo { color: var(--teal); }
+.small-line {
+  width: 29px;
+  height: 3px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--accent) 33%, var(--teal) 33% 66%, var(--violet) 66%);
+}
+.home h1 em {
+  background: linear-gradient(105deg, var(--accent) 20%, #a45472 65%, var(--violet));
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+html[data-theme=dark] .home h1 em {
+  background-image: linear-gradient(105deg, var(--accent), #e4a5c2 65%, var(--violet));
+}
+.home-quote {
+  margin: 29px 0 0;
+  max-width: 390px;
+  position: relative;
+}
+.home-quote p { margin: 0; }
+.home-quote cite {
+  display: block;
+  margin-top: 12px;
+  font: normal 11px/1.6 var(--sans);
+  letter-spacing: .15px;
+  color: var(--teal);
+}
+.portrait-media {
+  background: linear-gradient(145deg,
+    color-mix(in srgb, var(--accent) 14%, var(--bg)),
+    color-mix(in srgb, var(--violet) 16%, var(--bg)) 57%,
+    color-mix(in srgb, var(--teal) 15%, var(--bg)));
+}
+.portrait-fallback { isolation: isolate; }
+.portrait-initials {
+  position: relative;
+  z-index: 1;
+  color: var(--teal);
+  letter-spacing: -7px;
+  padding-right: 7px;
+}
+.portrait-rule {
+  position: relative;
+  z-index: 1;
+  width: 48px;
+  height: 2px;
+  opacity: .7;
+  background: linear-gradient(90deg, var(--accent), var(--violet), var(--teal));
+}
+.inline-link {
+  border-color: var(--teal);
+  transition: color 180ms ease, border-color 180ms ease;
+}
+.inline-link:hover { color: var(--teal); border-color: var(--violet); }
+.inline-link span { color: var(--violet); }
+.site-header nav a:hover { color: var(--teal); }
+.work-row:nth-child(3n+1) .work-cover {
+  background: color-mix(in srgb, var(--teal) 12%, var(--bg));
+}
+.work-row:nth-child(3n+2) .work-cover {
+  background: color-mix(in srgb, var(--violet) 14%, var(--bg));
+}
+.work-row:nth-child(3n+3) .work-cover {
+  background: color-mix(in srgb, var(--accent) 12%, var(--bg));
+}
+.work-row:nth-child(3n+1) .work-number { color: var(--teal); }
+.work-row:nth-child(3n+2) .work-number { color: var(--violet); }
+.work-row:nth-child(3n+3) .work-number { color: var(--accent); }
+.project-back:hover, .detail-next a { color: var(--teal); }
+@media (forced-colors: active) {
+  .home h1 em { background: none; color: CanvasText; }
+}
