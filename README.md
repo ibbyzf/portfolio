@@ -2,6 +2,8 @@
 
 Static portfolio hosted with GitHub Pages at https://ibbyzf.org.
 
+For photo uploads and project edits, see [EDITING_GUIDE.md](EDITING_GUIDE.md).
+
 ## Update the website
 
 1. Edit the files in VS Code, or use GitHub's file editor.

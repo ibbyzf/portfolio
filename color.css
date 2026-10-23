@@ -86,6 +86,23 @@ html[data-theme=dark] .home h1 em {
 .work-row:nth-child(3n+2) .work-number { color: var(--violet); }
 .work-row:nth-child(3n+3) .work-number { color: var(--accent); }
 .project-back:hover, .detail-next a { color: var(--teal); }
+.hero-socials { margin-top: 20px; gap: 10px; }
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 10px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  font-size: 11px;
+  line-height: 1.5;
+  color: var(--fg);
+  transition: border-color 160ms ease, color 160ms ease;
+}
+.contact-icon { display: block; width: 22px; height: 22px; }
+.contact-link:hover { color: var(--teal); border-color: var(--teal); }
+.site-footer .contact-link { padding: 0; border: 0; border-radius: 0; font-size: 10px; }
+.site-footer .contact-icon { width: 19px; height: 19px; }
 @media (forced-colors: active) {
   .home h1 em { background: none; color: CanvasText; }
 }

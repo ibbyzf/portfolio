@@ -6,7 +6,19 @@ let stored;try{stored=localStorage.getItem('portfolio-theme');}catch{}
 const setTheme=t=>{document.documentElement.dataset.theme=t;document.querySelectorAll('.theme-toggle').forEach(b=>b.setAttribute('aria-label','Switch to '+(t==='dark'?'light':'dark')+' mode'));};
 setTheme(stored==='dark'?'dark':'light');document.querySelectorAll('.theme-toggle').forEach(b=>b.addEventListener('click',()=>{const t=document.documentElement.dataset.theme==='dark'?'light':'dark';setTheme(t);try{localStorage.setItem('portfolio-theme',t);}catch{}}));
 const path=location.pathname.split('/').pop();document.querySelectorAll('.site-header nav a').forEach(a=>{if(a.getAttribute('href')===path||(path==='project.html'&&a.getAttribute('href')==='projects.html'))a.setAttribute('aria-current','page');});
-document.querySelectorAll('[data-contact-links]').forEach(box=>{[['Email',data.email?'mailto:'+data.email:''],['LinkedIn',data.linkedin],['GitHub',data.github]].forEach(([name,url])=>{if(!url)return;try{if(!['https:','mailto:'].includes(new URL(url).protocol))return;}catch{return;}const a=el('a','',name);a.href=url;if(!url.startsWith('mailto:')){a.target='_blank';a.rel='noopener';}box.append(a);});});
+const contactIcons={Email:'assets/icons/email.svg',LinkedIn:'assets/icons/linkedin.svg'};
+document.querySelectorAll('[data-contact-links]').forEach(box=>{
+  [['Email',data.email?'mailto:'+data.email:''],['LinkedIn',data.linkedin],['GitHub',data.github]].forEach(([name,url])=>{
+    if(!url)return;
+    try{if(!['https:','mailto:'].includes(new URL(url).protocol))return;}catch{return;}
+    const a=el('a','contact-link');a.href=url;
+    a.setAttribute('aria-label',name==='Email'?'Email Ibrahim Feknous':name+' profile (opens in a new tab)');
+    if(contactIcons[name]){const img=el('img','contact-icon');img.src=contactIcons[name];img.alt='';img.width=22;img.height=22;a.append(img);}
+    a.append(el('span','contact-label',name));
+    if(!url.startsWith('mailto:')){a.target='_blank';a.rel='noopener noreferrer';}
+    box.append(a);
+  });
+});
 const imageDialog=document.querySelector('#image-dialog');let imageTrigger;
 imageDialog?.querySelector('.image-close').addEventListener('click',()=>imageDialog.close());imageDialog?.addEventListener('close',()=>imageTrigger?.focus());imageDialog?.addEventListener('click',e=>{if(e.target===imageDialog){const r=imageDialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)imageDialog.close();}});
 function validImage(src){if(typeof src!=='string'||!src.trim())return false;try{return ['http:','https:','file:'].includes(new URL(src,document.baseURI).protocol);}catch{return false;}}
