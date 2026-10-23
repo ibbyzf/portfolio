@@ -3,9 +3,9 @@
  */
 window.PORTFOLIO = {
   "portrait": {
-    "src": "",
-    "alt": "Ibrahim Feknous",
-    "position": "50% 40%"
+    "src": "assets/images/portrait.webp",
+    "alt": "Ibrahim Feknous seated in a vehicle wearing a helmet",
+    "position": "50% 38%"
   },
   "aboutPhotos": [],
   "intro": "BS/MS electrical engineering student at NJIT, focused on power electronics and embedded hardware.",
@@ -16,8 +16,8 @@ window.PORTFOLIO = {
   "projects": [
     {
       "id": "motor-controller",
-      "image": "",
-      "imageAlt": "",
+      "image": "assets/images/coming-soon.webp",
+      "imageAlt": "Project photograph coming soon",
       "imagePosition": "center",
       "gallery": [],
       "title": "Regenerative motor controller",
@@ -39,12 +39,13 @@ window.PORTFOLIO = {
         "Implementing PWM generation, current sensing, protection logic, and fault detection.",
         "Working on CAN/Ethernet communication and an interface for current limits, telemetry, operating parameters, fault reporting, and automatic shutdown."
       ],
-      "note": "Senior capstone project · Current focus: control, sensing, protection, and power-stage development."
+      "note": "Senior capstone project · Current focus: control, sensing, protection, and power-stage development.",
+      "imageFit": "contain"
     },
     {
       "id": "robotics-motherboard",
-      "image": "",
-      "imageAlt": "",
+      "image": "assets/images/coming-soon.webp",
+      "imageAlt": "Project photograph coming soon",
       "imagePosition": "center",
       "gallery": [],
       "title": "Embedded robotics motherboard",
@@ -67,12 +68,13 @@ window.PORTFOLIO = {
         "Developed an architecture to centralize wiring and simplify debugging, with scalability for a projected fleet of more than 80 robots.",
         "Used oscilloscopes, probing techniques, power supplies, and multimeters during development."
       ],
-      "note": "Personal contribution: motherboard design and routing, relay interfaces, and hardware development. Fleet size is projected."
+      "note": "Personal contribution: motherboard design and routing, relay interfaces, and hardware development. Fleet size is projected.",
+      "imageFit": "contain"
     },
     {
       "id": "buck-converter",
-      "image": "",
-      "imageAlt": "",
+      "image": "assets/images/buck-converter.webp",
+      "imageAlt": "Synchronous buck converter PCB layout",
       "imagePosition": "center",
       "gallery": [],
       "title": "Synchronous buck converter",
@@ -94,14 +96,22 @@ window.PORTFOLIO = {
         "Designed and routed the PCB in KiCad.",
         "Evaluated output ripple, load behavior, and switching performance through LTspice simulation across multiple current loads."
       ],
-      "note": "Validation described here is simulation-based."
+      "note": "Validation described here is simulation-based.",
+      "imageFit": "contain"
     },
     {
       "id": "solar-car",
-      "image": "",
-      "imageAlt": "",
-      "imagePosition": "center",
-      "gallery": [],
+      "image": "assets/images/solar-car.webp",
+      "imageAlt": "NJIT Solar Car display with a team member",
+      "imagePosition": "50% 45%",
+      "gallery": [
+        {
+          "src": "assets/images/solar-car-design.webp",
+          "alt": "Collage of NJIT Solar Car electrical and mechanical designs",
+          "caption": "Electrical and mechanical design work for NJIT Solar Car.",
+          "fit": "contain"
+        }
+      ],
       "title": "NJIT Solar Car",
       "category": "systems",
       "label": "VEHICLE SYSTEMS / TEAM LEADERSHIP",
@@ -126,8 +136,8 @@ window.PORTFOLIO = {
     },
     {
       "id": "edge-cloud",
-      "image": "",
-      "imageAlt": "",
+      "image": "assets/images/research.webp",
+      "imageAlt": "Autonomous research vehicle with onboard electronics",
       "imagePosition": "center",
       "gallery": [],
       "title": "Edge-to-cloud autonomous systems",
@@ -154,8 +164,8 @@ window.PORTFOLIO = {
     },
     {
       "id": "balloon",
-      "image": "",
-      "imageAlt": "",
+      "image": "assets/images/weather-balloon.webp",
+      "imageAlt": "Weather balloon and payload suspended against a blue sky",
       "imagePosition": "center",
       "gallery": [],
       "title": "High-altitude balloon payload",
@@ -177,12 +187,13 @@ window.PORTFOLIO = {
         "Develop a research component connected to the 2027 solar eclipse.",
         "Pursue a NASA-funded New Jersey consortium grant opportunity to support the work."
       ],
-      "note": "Student research project · Payload preparation and funding applications are ongoing."
+      "note": "Student research project · Payload preparation and funding applications are ongoing.",
+      "imageFit": "contain"
     },
     {
       "id": "battery-pack",
-      "image": "",
-      "imageAlt": "",
+      "image": "assets/images/coming-soon.webp",
+      "imageAlt": "Project photograph coming soon",
       "imagePosition": "center",
       "gallery": [],
       "title": "Custom battery management",
@@ -203,12 +214,13 @@ window.PORTFOLIO = {
         "Focus: battery pack development and custom battery management.",
         "The project is in progress; design specifications and test results will be added as the work develops."
       ],
-      "note": "In development."
+      "note": "In development.",
+      "imageFit": "contain"
     },
     {
       "id": "moisture",
-      "image": "",
-      "imageAlt": "",
+      "image": "assets/images/moisture-meter.webp",
+      "imageAlt": "Moisture monitoring project with electronics and a display",
       "imagePosition": "center",
       "gallery": [],
       "title": "Connected moisture monitoring",
@@ -274,7 +286,10 @@ window.PORTFOLIO = {
     {
       "title": "IEEE Student Branch",
       "role": "Vice President",
-      "text": "Lead student programming, technical activities, and branch initiatives at NJIT."
+      "text": "Lead student programming, technical activities, and branch initiatives at NJIT.",
+      "image": "assets/images/ieee.webp",
+      "imageAlt": "Photograph at an IEEE event",
+      "imageFit": "contain"
     },
     {
       "title": "2027 IEEE Region 1 & 2 Student Branch Summit",
@@ -284,7 +299,10 @@ window.PORTFOLIO = {
     {
       "title": "MakeNJIT Hardware Hackathon",
       "role": "Executive Chair",
-      "text": "Direct logistics, outreach, marketing, finance, and sponsor relations for the hardware hackathon."
+      "text": "Direct logistics, outreach, marketing, finance, and sponsor relations for the hardware hackathon.",
+      "image": "assets/images/makenjit.webp",
+      "imageAlt": "Participants collaborating on hardware at MakeNJIT",
+      "imageFit": "cover"
     },
     {
       "title": "IEEE GRSS",
