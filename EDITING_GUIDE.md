@@ -166,4 +166,18 @@ To update your resume, upload a replacement at the repository root using the sam
 
 If a photo does not appear, first check its path, capitalization and extension. If project content disappears, check `content.js` for a missing comma, quote or bracket.
 
-For immediate refresh after future edits, increase the version number on the changed asset's URL in **all five HTML files** (`index.html`, `about.html`, `projects.html`, `project.html`, `experience.html`). For example, change `content.js?v=3` to `content.js?v=4` after editing `content.js`. This prevents visitors from receiving an older cached copy. Apply the same idea to `app.js`, `color.css`, or `portfolio-effects.js` when you change those files.
+For immediate refresh after future edits, increase the version number on the changed asset's URL in **all five HTML files** (`index.html`, `about.html`, `projects.html`, `project.html`, `experience.html`). For example, change `content.js?v=4` to `content.js?v=5` after editing `content.js`. This prevents visitors from receiving an older cached copy. Apply the same idea to `app.js`, `color.css`, or `portfolio-effects.js` when you change those files.
+
+## Photo fitting and current skills
+
+The current site uses optimized WebP copies in `assets/images/`. Your supplied photos are assigned in `content.js`.
+
+- `portrait`: homepage portrait.
+- Each project's `image`: cover photo.
+- Each project's `gallery`: additional images.
+- Each leadership role's optional `image`: photo beside that role on Experience.
+- `skillGroups`: programming languages, software and technical skills on About.
+
+Use `"imageFit": "contain"` on a project or leadership role to show the entire image. Use `"imageFit": "cover"` to fill its frame with a crop. Gallery pictures use `"fit": "contain"` or `"fit": "cover"`. Project detail covers show the full image by default; project-list thumbnails use a crop unless you specify `imageFit`.
+
+Edit the `items` list inside a `skillGroups` group to change its entries. The groups are displayed in the same order as the file, with programming languages and engineering software first.

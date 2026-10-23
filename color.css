@@ -97,12 +97,32 @@ html[data-theme=dark] .home h1 em {
   font-size: 11px;
   line-height: 1.5;
   color: var(--fg);
+  background: color-mix(in srgb, var(--bg) 92%, var(--line));
   transition: border-color 160ms ease, color 160ms ease;
 }
 .contact-icon { display: block; width: 22px; height: 22px; }
-.contact-link:hover { color: var(--teal); border-color: var(--teal); }
-.site-footer .contact-link { padding: 0; border: 0; border-radius: 0; font-size: 10px; }
+.contact-link:hover { color: var(--fg); border-color: var(--sub); }
+.site-footer .contact-link { padding: 0; border: 0; border-radius: 0; font-size: 10px; background: transparent; }
 .site-footer .contact-icon { width: 19px; height: 19px; }
+html[data-theme=dark] .contact-icon { filter: brightness(0) invert(.78); }
+.skill-group + .skill-group { margin-top: 20px; }
+.skill-group h3 { font: 12px/1.6 var(--sans); color: var(--fg); margin-bottom: 6px; }
+.skill-group p { font-size: 12px; line-height: 2; color: var(--sub); }
+.leadership-item.has-photo {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 180px;
+  gap: 24px;
+  align-items: start;
+}
+.leadership-description { font-size: 12px; line-height: 1.95; color: var(--sub); margin-top: 15px; }
+.leadership-photo { position: relative; width: 180px; aspect-ratio: 4/3; overflow: hidden; background: var(--photo); }
+.portrait-media:has(.photo-image) { aspect-ratio: 4/5; }
+.leadership-project-link { display: inline-block; margin-top: 12px; font-size: 11px; color: var(--teal); border-bottom: 1px solid var(--line); }
+.gallery:has(> figure:only-child) { grid-template-columns: minmax(0, 1fr); max-width: 760px; }
+@media (max-width: 560px) {
+  .leadership-item.has-photo { grid-template-columns: minmax(0, 1fr); gap: 18px; }
+  .leadership-photo { width: min(100%, 300px); }
+}
 @media (forced-colors: active) {
   .home h1 em { background: none; color: CanvasText; }
 }

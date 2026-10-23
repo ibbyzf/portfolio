@@ -1,4 +1,4 @@
-/* Edit your project details, photo paths, experience, skills and contact links here.
+/* Edit project details, photo paths, experience, skillGroups and contact links here.
  * See EDITING_GUIDE.md for examples. Paths start from the repository root.
  */
 window.PORTFOLIO = {
@@ -8,27 +8,11 @@ window.PORTFOLIO = {
     "position": "50% 40%"
   },
   "aboutPhotos": [],
-  "intro": "Electrical engineering student at NJIT, focused on power electronics and embedded hardware.",
-  "about": "My experience includes solar design, robotics electronics, and autonomous systems research. At NJIT, I lead Solar Car and organize IEEE events.",
+  "intro": "BS/MS electrical engineering student at NJIT, focused on power electronics and embedded hardware.",
+  "about": "I’m pursuing a BS/MS in electrical engineering at NJIT. My experience includes robotics electronics, solar and energy storage design, and research in the NJIT UNICS Lab. I lead the Solar Car Team and help organize technical projects and events through IEEE.",
   "email": "ibrahimfeknous1@gmail.com",
   "linkedin": "https://www.linkedin.com/in/ibrahim-feknous/",
   "github": "",
-  "skills": [
-    "Altium",
-    "KiCad",
-    "LTspice",
-    "AutoCAD",
-    "PVsyst",
-    "STM32",
-    "Teensy",
-    "ESP32",
-    "C++",
-    "Python",
-    "MATLAB",
-    "Soldering",
-    "Oscilloscopes",
-    "SolidWorks"
-  ],
   "projects": [
     {
       "id": "motor-controller",
@@ -159,7 +143,7 @@ window.PORTFOLIO = {
         "Research"
       ],
       "summary": "Edge-to-cloud computation for a TRAXXAS vehicle platform, evaluated in CARLA.",
-      "overview": "Undergraduate research in NJIT’s Ubiquitous Networking and Intelligent Computing System Lab, using a TRAXXAS platform to investigate edge-to-cloud computing.",
+      "overview": "Undergraduate research in the NJIT UNICS Lab, using a TRAXXAS vehicle platform to investigate edge-to-cloud computing.",
       "details": [
         "Engineered an edge-to-cloud pipeline to reduce latency and computation cost.",
         "Validated performance through CARLA simulations demonstrating a 70% improvement in response time.",
@@ -183,13 +167,13 @@ window.PORTFOLIO = {
       "color": "lilac",
       "tags": [
         "Atmospheric sensing",
-        "GRSS",
-        "Payload development"
+        "Custom PCB",
+        "GRSS"
       ],
-      "summary": "An atmospheric sensing payload for a high-altitude balloon and 2027 eclipse research.",
-      "overview": "Leading design, development, and preparation of a high-altitude weather balloon payload through NJIT IEEE Geoscience and Remote Sensing Society.",
+      "summary": "A weather balloon payload with a custom PCB for atmospheric sensing and remote sensing research.",
+      "overview": "Leading a high-altitude weather balloon project through NJIT IEEE GRSS, combining geoscience, remote sensing, and custom payload electronics.",
       "details": [
-        "Manage payload development for atmospheric data collection.",
+        "Develop a custom PCB for payload sensing and atmospheric data collection.",
         "Develop a research component connected to the 2027 solar eclipse.",
         "Pursue a NASA-funded New Jersey consortium grant opportunity to support the work."
       ],
@@ -268,7 +252,7 @@ window.PORTFOLIO = {
       ]
     },
     {
-      "company": "NJIT · Networking & Intelligent Computing Lab",
+      "company": "NJIT UNICS Lab",
       "role": "Undergraduate Researcher",
       "date": "MAY 2025 – AUG 2026",
       "points": [
@@ -277,8 +261,8 @@ window.PORTFOLIO = {
       ]
     },
     {
-      "company": "NJIT · Engineering Design & IEEE-HKN",
-      "role": "Teaching Assistant & Tutor",
+      "company": "NJIT",
+      "role": "FED 101 TA & IEEE-HKN Tutor",
       "date": "SEP – DEC 2025",
       "points": [
         "Supported five sections with more than 150 students through lab instruction, grading, and technical demonstrations.",
@@ -288,19 +272,85 @@ window.PORTFOLIO = {
   ],
   "leadership": [
     {
-      "title": "NJIT Solar Car",
-      "role": "President & Re-Founder",
-      "text": "Coordinating more than 80 board and development team members across vehicle engineering, sponsorship, and university engagement."
+      "title": "IEEE Student Branch",
+      "role": "Vice President",
+      "text": "Lead student programming, technical activities, and branch initiatives at NJIT."
     },
     {
-      "title": "IEEE & MakeNJIT",
-      "role": "Vice President · Executive Chair",
-      "text": "Lead technical programming and student initiatives. Direct MakeNJIT logistics, finance, outreach, and sponsor relations for a 250+ participant hardware hackathon with $80,000+ in sponsorships."
+      "title": "2027 IEEE Region 1 & 2 Student Branch Summit",
+      "role": "Executive Chair",
+      "text": "Lead planning for the 2027 summit, including workshops, competitions, logistics, and sponsorship."
     },
     {
-      "title": "IEEE Region 1 & 2 Summit",
-      "role": "2027 Conference Chair",
-      "text": "Planning a student engineering summit with workshops and competitions, a $50,000+ sponsorship target, and 250+ projected participants from more than 10 states."
+      "title": "MakeNJIT Hardware Hackathon",
+      "role": "Executive Chair",
+      "text": "Direct logistics, outreach, marketing, finance, and sponsor relations for the hardware hackathon."
+    },
+    {
+      "title": "IEEE GRSS",
+      "role": "President",
+      "text": "Lead geoscience and remote sensing activities, including a weather balloon project and a custom payload PCB.",
+      "projectId": "balloon"
+    },
+    {
+      "title": "IEEE CASS",
+      "role": "Secretary",
+      "text": "Support the chapter’s first student-led tapeout project and its PCB and FPGA groups."
+    }
+  ],
+  "skillGroups": [
+    {
+      "title": "Programming languages",
+      "items": [
+        "C",
+        "C++",
+        "Python",
+        "Java"
+      ]
+    },
+    {
+      "title": "Electronics & simulation",
+      "items": [
+        "Altium",
+        "KiCad",
+        "LTspice",
+        "NI Multisim",
+        "MATLAB",
+        "Simulink",
+        "Siemens PSS/E",
+        "PVsyst"
+      ]
+    },
+    {
+      "title": "CAD & software",
+      "items": [
+        "AutoCAD",
+        "Fusion 360",
+        "SolidWorks",
+        "Onshape",
+        "Revit",
+        "Altair",
+        "Bluebeam",
+        "Arduino IDE",
+        "CARLA",
+        "Ubuntu",
+        "Microsoft Office"
+      ]
+    },
+    {
+      "title": "Hardware & technical areas",
+      "items": [
+        "PCB design",
+        "Power electronics",
+        "Embedded systems",
+        "Solar PV",
+        "IoT",
+        "Robotics",
+        "Computer vision",
+        "CNC machining",
+        "Soldering",
+        "RISC-V"
+      ]
     }
   ]
 };
