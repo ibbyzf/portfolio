@@ -9,7 +9,7 @@ window.PORTFOLIO = {
   },
   "aboutPhotos": [],
   "intro": "BS/MS electrical engineering student at NJIT, focused on power electronics and embedded hardware.",
-  "about": "I’m pursuing a BS/MS in electrical engineering at NJIT. My experience includes robotics electronics, solar and energy storage design, and research in the NJIT UNICS Lab. I lead the Solar Car Team and help organize technical projects and events through IEEE.",
+  "about": "I’m Ibrahim. I like building things, figuring out how they work, and finding people who want to do the same. Lately, that’s meant a solar car, autonomous racing, and a weather balloon with custom electronics.",
   "email": "ibrahimfeknous1@gmail.com",
   "linkedin": "https://www.linkedin.com/in/ibrahim-feknous/",
   "github": "",
@@ -44,8 +44,8 @@ window.PORTFOLIO = {
     },
     {
       "id": "robotics-motherboard",
-      "image": "assets/images/coming-soon.webp",
-      "imageAlt": "Project photograph coming soon",
+      "image": "assets/images/robotics-motherboard-schematic.webp",
+      "imageAlt": "Embedded robotics motherboard schematic with Teensy control, relay channels, power regulation, and precharge circuit",
       "imagePosition": "center",
       "gallery": [],
       "title": "Embedded robotics motherboard",
@@ -314,6 +314,22 @@ window.PORTFOLIO = {
       "title": "IEEE CASS",
       "role": "Secretary",
       "text": "Support the chapter’s first student-led tapeout project and its PCB and FPGA groups."
+    },
+    {
+      "title": "NJIT Solar Car Team",
+      "role": "President",
+      "text": "Lead the team as we build a solar-powered car and bring more students into the project.",
+      "projectId": "solar-car"
+    },
+    {
+      "title": "ECE Student Advisory Board",
+      "role": "Representative",
+      "text": "Represent ECE students on the student advisory board."
+    },
+    {
+      "title": "NJIT Autonomous Racing",
+      "role": "Student Advisor",
+      "text": "Advise students working on autonomous racing projects."
     }
   ],
   "skillGroups": [
