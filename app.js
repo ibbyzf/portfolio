@@ -40,7 +40,6 @@ const work=document.querySelector('#experience-list');if(work)data.experience.fo
 const lead=document.querySelector('#leadership-list');
 if(lead)data.leadership.forEach(l=>{
   const a=el('article','leadership-item'),copy=el('div','leadership-copy');
-  if(l.logo){const logo=el('img','organization-logo');logo.src=l.logo;logo.alt=l.title+' logo';logo.loading='lazy';copy.append(logo);}
   copy.append(el('h3','',l.title),el('p','role',l.role));
   const points=el('ul','leadership-points');(l.points||[l.text]).filter(Boolean).forEach(t=>points.append(el('li','',t)));copy.append(points);
   if(l.website){const link=el('a','leadership-project-link','Team website ↗');link.href=l.website;link.target='_blank';link.rel='noopener noreferrer';copy.append(link);}

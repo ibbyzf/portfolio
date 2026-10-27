@@ -142,7 +142,6 @@ html[data-theme=dark]{--sub:#bebdb3}
 .experience-item:before,.leadership-item:before{content:'';position:absolute;left:-24px;top:36px;width:5px;height:5px;background:var(--teal);border-radius:50%;box-shadow:0 0 0 4px color-mix(in srgb,var(--teal) 9%,transparent)}
 .leadership-points{font-size:12px;line-height:1.95;color:var(--sub);padding-left:17px;margin:16px 0 0}
 .leadership-points li+li{margin-top:8px}
-.organization-logo{display:block;width:150px;height:76px;object-fit:contain;object-position:left center;background:#fff;padding:10px;border:1px solid #e5e5df;border-radius:3px;margin-bottom:20px}
 .leadership-photo,.work-cover,.gallery-media,.detail-cover{border:1px solid color-mix(in srgb,var(--line) 70%,transparent);box-shadow:0 12px 25px -20px #20232388}
 .leadership-item.has-photo{grid-template-columns:minmax(0,1fr) 190px}
 .leadership-photo{width:190px}
