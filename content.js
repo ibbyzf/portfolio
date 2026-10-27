@@ -9,7 +9,7 @@ window.PORTFOLIO = {
   },
   "aboutPhotos": [],
   "intro": "BS/MS electrical engineering student at NJIT, focused on power electronics and embedded hardware.",
-  "about": "I’m Ibrahim. I like building things, figuring out how they work, and finding people who want to do the same. Lately, that’s meant a solar car, autonomous racing, and a weather balloon with custom electronics.",
+  "about": "Hi, I’m Ibrahim! I like making my imagination a reality.",
   "email": "ibrahimfeknous1@gmail.com",
   "linkedin": "https://www.linkedin.com/in/ibrahim-feknous/",
   "github": "",
@@ -106,6 +106,12 @@ window.PORTFOLIO = {
       "imagePosition": "50% 45%",
       "gallery": [
         {
+          "src": "assets/images/solar-car-track.webp",
+          "alt": "NJIT solar car on a paved test track",
+          "caption": "NJIT Solar Car Team.",
+          "fit": "contain"
+        },
+        {
           "src": "assets/images/solar-car-design.webp",
           "alt": "Collage of NJIT Solar Car electrical and mechanical designs",
           "caption": "Electrical and mechanical design work for NJIT Solar Car.",
@@ -132,7 +138,8 @@ window.PORTFOLIO = {
         "Developed sponsorship and university engagement strategy contributing to more than $120,000 in sponsorships for the program.",
         "Built project structures supporting capstone work, research credit, and cross-functional engineering development."
       ],
-      "note": "Team project · My focus includes leadership, system coordination, sponsorship, and program development."
+      "note": "Team project · My focus includes leadership, system coordination, sponsorship, and program development.",
+      "website": "https://solarcar.njit.edu/"
     },
     {
       "id": "edge-cloud",
@@ -250,8 +257,10 @@ window.PORTFOLIO = {
       "role": "Electrical Engineer I Intern",
       "date": "JUN – AUG 2026",
       "points": [
-        "Designed and supported commercial solar PV and energy storage systems ranging from 100 kW to 20 MW.",
-        "Developed AutoCAD drawings and construction documents; supported utility interconnection, permitting, PVsyst modeling, and field visits."
+        "Designed and supported commercial solar PV and energy storage systems from 100 kW to 20 MW.",
+        "Developed AutoCAD drawings, construction documents, and layouts under NFPA 70 and IBC requirements.",
+        "Prepared utility interconnection and permitting packages by collecting technical data and coordinating requirements.",
+        "Performed PVsyst production modeling, site analysis, and field visits."
       ]
     },
     {
@@ -259,8 +268,10 @@ window.PORTFOLIO = {
       "role": "Robotics Engineer Intern",
       "date": "APR – AUG 2026",
       "points": [
-        "Worked on autonomous construction robots and designed a custom embedded robotics motherboard.",
-        "Integrated sensor interfaces, relay control, and power distribution to centralize wiring and simplify debugging."
+        "Built autonomous construction robots to automate repetitive work on jobsites.",
+        "Designed and routed a Teensy-based motherboard with RJ45 sensor interfaces, relay channels, and power distribution.",
+        "Implemented transistor-driven relay control with flyback protection.",
+        "Used oscilloscopes, power supplies, and multimeters during development; designed the architecture for a projected fleet of 80+ robots."
       ]
     },
     {
@@ -268,8 +279,10 @@ window.PORTFOLIO = {
       "role": "Undergraduate Researcher",
       "date": "MAY 2025 – AUG 2026",
       "points": [
-        "Developed an edge-to-cloud computing pipeline on a TRAXXAS platform and evaluated it in CARLA.",
-        "Collaborated with researchers and faculty and presented findings at a research symposium."
+        "Developed an edge-to-cloud computing pipeline on a TRAXXAS vehicle platform.",
+        "Evaluated autonomous-system behavior in CARLA, demonstrating a 70% improvement in response time in simulation.",
+        "Worked with PhD researchers, faculty, and Siemens research engineers through a ten-week program.",
+        "Presented findings at a university research symposium."
       ]
     },
     {
@@ -277,59 +290,94 @@ window.PORTFOLIO = {
       "role": "FED 101 TA & IEEE-HKN Tutor",
       "date": "SEP – DEC 2025",
       "points": [
-        "Supported five sections with more than 150 students through lab instruction, grading, and technical demonstrations.",
-        "Tutored circuits, Arduino programming, and electronics fundamentals using lab instrumentation."
+        "Supported five FED 101 sections with more than 150 students.",
+        "Helped with lab instruction, grading, and technical demonstrations.",
+        "Tutored circuits, Arduino programming, and electronics fundamentals through IEEE-HKN.",
+        "Guided students using waveform generators, multimeters, and DC power supplies."
       ]
     }
   ],
   "leadership": [
     {
-      "title": "IEEE Student Branch",
+      "title": "NJIT IEEE Student Branch",
       "role": "Vice President",
-      "text": "Lead student programming, technical activities, and branch initiatives at NJIT.",
       "image": "assets/images/ieee.webp",
       "imageAlt": "Photograph at an IEEE event",
-      "imageFit": "contain"
+      "imageFit": "contain",
+      "points": [
+        "Lead student technical programming and branch initiatives as Vice President.",
+        "Help organize hands-on engineering groups and opportunities for students to develop their own projects."
+      ]
     },
     {
       "title": "2027 IEEE Region 1 & 2 Student Branch Summit",
       "role": "Executive Chair",
-      "text": "Lead planning for the 2027 summit, including workshops, competitions, logistics, and sponsorship."
+      "points": [
+        "Lead planning for a summit with 250+ projected participants from more than ten states.",
+        "Coordinate workshops, competitions, logistics, and sponsorship toward a $50,000+ target."
+      ]
     },
     {
       "title": "MakeNJIT Hardware Hackathon",
       "role": "Executive Chair",
-      "text": "Direct logistics, outreach, marketing, finance, and sponsor relations for the hardware hackathon.",
       "image": "assets/images/makenjit.webp",
       "imageAlt": "Participants collaborating on hardware at MakeNJIT",
-      "imageFit": "cover"
+      "imageFit": "cover",
+      "points": [
+        "Direct logistics, outreach, marketing, finance, and sponsor relations.",
+        "Help deliver a hardware-focused event for 250+ participants, with over $80,000 in sponsorships."
+      ]
     },
     {
-      "title": "IEEE GRSS",
+      "title": "NJIT IEEE Geoscience and Remote Sensing Society",
       "role": "President",
-      "text": "Lead geoscience and remote sensing activities, including a weather balloon project and a custom payload PCB.",
-      "projectId": "balloon"
+      "projectId": "balloon",
+      "points": [
+        "Lead a high-altitude balloon project targeting cosmic ray and atmospheric measurements at 110,000+ feet.",
+        "Design an STM32 sensor PCB with LoRa telemetry, GPS, and SPI/I²C interfaces for payload data collection."
+      ],
+      "logo": "assets/images/grss-logo.png"
     },
     {
-      "title": "IEEE CASS",
+      "title": "NJIT IEEE Circuits and Systems Society",
       "role": "Secretary",
-      "text": "Support the chapter’s first student-led tapeout project and its PCB and FPGA groups."
+      "points": [
+        "Support the chapter’s first student-led tapeout project.",
+        "Help coordinate PCB and FPGA groups that give students experience developing hardware."
+      ],
+      "logo": "assets/images/cass-logo.png"
     },
     {
       "title": "NJIT Solar Car Team",
+      "logo": "assets/images/solar-car-logo.png",
       "role": "President",
-      "text": "Lead the team as we build a solar-powered car and bring more students into the project.",
-      "projectId": "solar-car"
+      "projectId": "solar-car",
+      "points": [
+        "Re-founded the team and lead 20+ board members and 60+ development members.",
+        "Coordinate vehicle development across electrical and mechanical subteams, including battery management, power distribution, controls, and chassis.",
+        "Helped develop a sponsorship and university engagement strategy contributing to $120,000+ for the program.",
+        "Created project structures supporting capstone work and research credit."
+      ],
+      "image": "assets/images/solar-car-track.webp",
+      "imageAlt": "NJIT solar car on a paved test track",
+      "imageFit": "contain",
+      "website": "https://solarcar.njit.edu/"
     },
     {
       "title": "ECE Student Advisory Board",
       "role": "Representative",
-      "text": "Represent ECE students on the student advisory board."
+      "points": [
+        "Represent ECE students on the student advisory board.",
+        "Bring a student perspective from coursework and hands-on engineering projects to board discussions."
+      ]
     },
     {
       "title": "NJIT Autonomous Racing",
       "role": "Student Advisor",
-      "text": "Advise students working on autonomous racing projects."
+      "points": [
+        "Advise students developing an autonomous vehicle for the 2027 IGVC.",
+        "Support integration of NVIDIA Jetson computing and Intel RealSense cameras with perception, planning, and motor control."
+      ]
     }
   ],
   "skillGroups": [

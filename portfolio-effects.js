@@ -177,3 +177,13 @@
   window.addEventListener('resize',()=>{hide();size();},{passive:true});
   media.addEventListener('change',hide);
 })();
+
+// A restrained perspective shift on the portrait, with no motion on touch devices.
+(() => {
+ const photo=document.querySelector('.portrait-media');
+ const enabled=matchMedia('(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference)');
+ if(!photo)return;
+ const reset=()=>{photo.style.removeProperty('--tilt-x');photo.style.removeProperty('--tilt-y');};
+ photo.addEventListener('pointermove',e=>{if(!enabled.matches)return;const r=photo.getBoundingClientRect();photo.style.setProperty('--tilt-y',((e.clientX-r.left)/r.width-.5)*7+'deg');photo.style.setProperty('--tilt-x',-((e.clientY-r.top)/r.height-.5)*7+'deg');},{passive:true});
+ photo.addEventListener('pointerleave',reset);enabled.addEventListener('change',reset);
+})();
